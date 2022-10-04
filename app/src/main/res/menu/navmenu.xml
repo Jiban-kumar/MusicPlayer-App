@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item android:id="@+id/recent"
+        android:title="Recents"
+        android:icon="@drawable/ic_recent"/>
+    <item
+        android:id="@+id/library"
+        android:title="Music Library"
+        android:icon="@drawable/ic_library"/>
+</menu>

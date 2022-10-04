@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp"
+    android:id="@+id/linrow">
+<ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/animemusic"
+    android:layout_gravity="center"
+    android:scaleType="centerCrop"
+    android:layout_margin="5dp"
+    android:id="@+id/simage"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/simage"
+        android:layout_toLeftOf="@+id/fav"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sname"
+            android:text="Song Name"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ssinger"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="Jiban kumar Munda"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <ImageButton
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/more"
+        android:src="@drawable/ic_bmore"
+        android:backgroundTint="@color/transparnt"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="10dp"/>
+    <ImageButton
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_baseline_favorite_24"
+        android:backgroundTint="@color/transparnt"
+        android:tint="@color/icon_color"
+        android:id="@+id/fav"
+        android:gravity="center_vertical"
+        android:layout_toLeftOf="@+id/more"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"/>
+</RelativeLayout>
